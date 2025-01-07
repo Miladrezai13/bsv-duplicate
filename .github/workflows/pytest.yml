@@ -6,7 +6,9 @@ on:
   pull_request:
     branches: ["main"]
   workflow_dispatch:
-
+defaults:
+  run:
+    working-directory: ./test/unit
 jobs:
   test: 
     runs-on: ubuntu-latest
